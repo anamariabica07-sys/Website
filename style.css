@@ -605,11 +605,28 @@ em {
 /* =====================
    RESPONSIVE
    ===================== */
+
+/* Tablet & below */
 @media (max-width: 900px) {
+
+  .nav {
+    padding: 1.1rem 5%;
+  }
+
+  .nav__links {
+    display: none;
+  }
+
+  .nav__hamburger {
+    display: block;
+  }
+
   .hero {
     flex-direction: column;
     text-align: center;
-    padding-top: 7rem;
+    padding: 7rem 5% 4rem;
+    gap: 2.5rem;
+    min-height: auto;
   }
 
   .hero__content {
@@ -628,6 +645,18 @@ em {
     height: 420px;
   }
 
+  .about {
+    padding: 5rem 5%;
+  }
+
+  .coaching {
+    padding: 5rem 5%;
+  }
+
+  .speaking {
+    padding: 5rem 5%;
+  }
+
   .speaking__inner {
     flex-direction: column-reverse;
     gap: 3rem;
@@ -641,18 +670,13 @@ em {
     height: 380px;
   }
 
-  .nav__links {
-    display: none;
+  .book {
+    padding: 5rem 5%;
   }
 
-  .nav__hamburger {
-    display: block;
-  }
-}
-
-@media (max-width: 800px) {
   .book__inner {
     flex-direction: column;
+    gap: 3rem;
   }
 
   .book__divider {
@@ -662,3 +686,109 @@ em {
   }
 }
 
+/* Mobile only */
+@media (max-width: 600px) {
+
+  .nav {
+    padding: 1rem 5%;
+  }
+
+  .nav__logo {
+    font-size: 1.3rem;
+  }
+
+  .hero {
+    padding: 6rem 5% 3.5rem;
+    gap: 2rem;
+  }
+
+  .hero__tagline {
+    font-size: 0.65rem;
+  }
+
+  .hero__sub {
+    font-size: 1rem;
+  }
+
+  .hero__image {
+    height: 320px;
+  }
+
+  .hero__buttons {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .hero__buttons .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about {
+    padding: 4rem 5%;
+  }
+
+  .about__body p {
+    font-size: 0.97rem;
+  }
+
+  .coaching {
+    padding: 4rem 5%;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 1.8rem;
+  }
+
+  .coaching .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .speaking {
+    padding: 4rem 5%;
+  }
+
+  .speaking__image {
+    height: 280px;
+  }
+
+  .speaking__text p {
+    font-size: 0.95rem;
+  }
+
+  .speaking__text .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .book {
+    padding: 4rem 5%;
+  }
+
+  .book__half .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .enquiry-form .btn {
+    width: 100%;
+    text-align: center;
+    align-self: stretch;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 1rem;
+    padding: 0.85rem 1rem;
+  }
+
+  .footer {
+    padding: 2.5rem 5%;
+  }
+}
