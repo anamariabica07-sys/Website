@@ -114,13 +114,46 @@
   <!-- BOOKING -->
   <section class="book" id="book">
     <div class="book__inner">
-      <div class="section-label">Get Started</div>
-      <h2 class="section-title">Let's talk about<br/><em>your</em> life.</h2>
-      <p class="section-sub">Choose what suits you best — a coaching session or a conversation about bringing Ana to your organisation.</p>
-      <div class="book__buttons">
+
+      <!-- Coaching -->
+      <div class="book__half">
+        <div class="section-label">1:1 Coaching</div>
+        <h2 class="section-title">Ready to start?</h2>
+        <p class="section-sub">Book a coaching session directly through Ana's calendar.</p>
         <a href="https://calendly.com/getrealwithana" target="_blank" class="btn btn--primary">Book a Coaching Session</a>
-        <a href="https://calendly.com/getrealwithana" target="_blank" class="btn btn--ghost">Enquire About Speaking</a>
       </div>
+
+      <div class="book__divider"></div>
+
+      <!-- Speaking Enquiry Form -->
+      <div class="book__half">
+        <div class="section-label">Speaking Enquiries</div>
+        <h2 class="section-title">Bring Ana to your<br/><em>organisation.</em></h2>
+        <form class="enquiry-form" action="https://formspree.io/f/mdawrnan" method="POST">
+          <div class="form-group">
+            <label for="org">Organisation Name</label>
+            <input type="text" id="org" name="organisation" placeholder="Your organisation" required />
+          </div>
+          <div class="form-group">
+            <label for="contact">Contact Person</label>
+            <input type="text" id="contact" name="contact_person" placeholder="Your full name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="you@organisation.com" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+353 ..." />
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell Ana about your event..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">Send Enquiry</button>
+        </form>
+      </div>
+
     </div>
   </section>
 
