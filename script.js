@@ -64,3 +64,15 @@ document.querySelectorAll('.card, .about__inner, .speaking__text, .speaking__ima
   el.style.transition = 'opacity 0.7s ease, transform 0.7s ease';
   observer.observe(el);
 });
+
+// =====================
+// TESTIMONIAL READ MORE
+// =====================
+document.querySelectorAll('.testimonial__toggle').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const rest = btn.previousElementSibling.querySelector('.testimonial__rest');
+    const isHidden = rest.style.display === 'none';
+    rest.style.display = isHidden ? 'inline' : 'none';
+    btn.textContent = isHidden ? 'Read less' : 'Read more';
+  });
+});
