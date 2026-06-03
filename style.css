@@ -1002,3 +1002,83 @@ em {
     grid-template-columns: 1fr;
   }
 }
+
+/* =====================
+   WORKSHOPS
+   ===================== */
+.workshops {
+  background-color: var(--charcoal);
+  padding: 8rem 5%;
+  text-align: center;
+}
+
+.workshops__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.workshops .section-label {
+  color: var(--blush);
+}
+
+.workshops .section-title {
+  color: var(--cream);
+}
+
+.workshops .section-sub {
+  color: rgba(250, 247, 242, 0.7);
+  margin: 0 auto 3rem;
+}
+
+.workshops__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  text-align: left;
+}
+
+.workshop-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius);
+  padding: 2.2rem;
+  transition: background-color var(--transition), transform var(--transition);
+}
+
+.workshop-card:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  transform: translateY(-4px);
+}
+
+.workshop-card__number {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  color: var(--terracotta);
+  opacity: 0.6;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.workshop-card h3 {
+  font-size: 1.2rem;
+  color: var(--cream);
+  font-weight: 300;
+  margin-bottom: 0.6rem;
+}
+
+.workshop-card p {
+  font-size: 0.92rem;
+  color: rgba(250, 247, 242, 0.65);
+  line-height: 1.7;
+}
+
+@media (max-width: 600px) {
+  .workshops {
+    padding: 4rem 5%;
+  }
+
+  .workshops__grid {
+    grid-template-columns: 1fr;
+  }
+}
