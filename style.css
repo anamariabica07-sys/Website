@@ -374,7 +374,7 @@ em {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
   margin-bottom: 3rem;
   text-align: left;
@@ -386,6 +386,8 @@ em {
   border-radius: var(--radius);
   border: 1px solid var(--blush);
   transition: transform var(--transition), box-shadow var(--transition);
+  display: flex;
+  flex-direction: column;
 }
 
 .card:hover {
@@ -409,6 +411,7 @@ em {
   font-size: 0.92rem;
   color: var(--mid);
   line-height: 1.7;
+  flex: 1;
 }
 
 /* =====================
@@ -739,6 +742,10 @@ em {
 
   .cards {
     grid-template-columns: 1fr;
+  }
+
+  .card {
+    min-height: auto;
   }
 
   .card {
