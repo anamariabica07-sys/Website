@@ -885,3 +885,120 @@ em {
     grid-template-columns: 1fr;
   }
 }
+
+/* =====================
+   CREDENTIALS
+   ===================== */
+.credentials {
+  background-color: var(--charcoal);
+  padding: 8rem 5%;
+  text-align: center;
+}
+
+.credentials__inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.credentials .section-label {
+  color: var(--blush);
+}
+
+.credentials .section-title {
+  color: var(--cream);
+}
+
+.credentials .section-sub {
+  color: rgba(250, 247, 242, 0.7);
+  margin: 0 auto 3rem;
+}
+
+.credentials__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  text-align: left;
+}
+
+.credential {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius);
+  padding: 2.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  transition: background-color var(--transition);
+}
+
+.credential:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.credential__icon {
+  color: var(--terracotta);
+  font-size: 1.2rem;
+}
+
+.credential__institution {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--blush);
+  margin-bottom: 0.4rem;
+}
+
+.credential__title {
+  font-size: 1.2rem;
+  color: var(--cream);
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.credential__year {
+  font-size: 0.82rem;
+  color: rgba(250, 247, 242, 0.5);
+  margin-top: 0.3rem;
+}
+
+.credential__badges {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.badge {
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--terracotta);
+  border: 1px solid var(--terracotta);
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+}
+
+.credential__btn {
+  color: var(--cream) !important;
+  border-color: rgba(250, 247, 242, 0.3) !important;
+  font-size: 0.75rem;
+  padding: 0.65rem 1.4rem;
+  text-align: center;
+}
+
+.credential__btn:hover {
+  background-color: var(--cream) !important;
+  color: var(--charcoal) !important;
+}
+
+@media (max-width: 600px) {
+  .credentials {
+    padding: 4rem 5%;
+  }
+
+  .credentials__grid {
+    grid-template-columns: 1fr;
+  }
+}
